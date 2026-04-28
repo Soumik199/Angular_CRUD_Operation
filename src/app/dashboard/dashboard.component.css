@@ -1,0 +1,15 @@
+
+*{
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.Dasboard_Container {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.ButtonContainer { 
+    padding: 10px 0px  10px 0px;
+}

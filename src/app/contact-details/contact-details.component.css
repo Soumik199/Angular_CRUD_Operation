@@ -1,0 +1,46 @@
+  
+  body{
+    background-color: aliceblue;
+  }
+  .Form_Container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      box-sizing: border-box;
+
+  }
+
+  mat-card{
+    margin:20px
+  }
+  .FormTitle{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 400;
+    
+  }
+
+  .Contact_Form {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+      gap: 16px;
+  }
+
+  .Contact_Form mat-form-field {
+      width: 100%;
+  }
+
+    .button_container_left{
+        grid-column: 1 / -1;
+      display: flex;
+      justify-content: center;        
+      gap: 8px;
+    }
+
+
+  @media (max-width: 600px) {
+      .Contact_Form {
+          grid-template-columns: 1fr;
+      }
+  }

@@ -1,0 +1,50 @@
+{
+  "contacts": [
+    {
+      "name": "SoumikRoy",
+      "company": "MNP",
+      "phone": "980896544",
+      "address": "",
+      "email": "Soumik.Roy@mnp.ca",
+      "lastDateContact": "2026-03-11",
+      "id": "3e6a"
+    },
+    {
+      "name": "Developers",
+      "company": "MNP",
+      "phone": "09087654321",
+      "address": "Kolkata",
+      "email": "Soumik.Roy@mnp.ca",
+      "lastDateContact": "2026-03-09",
+      "id": "3239"
+    },
+    {
+      "name": "Testing",
+      "company": "KMPG",
+      "phone": "0987654321",
+      "address": "Canda",
+      "email": "Testing@kpmg.com",
+      "lastDateContact": "2026-03-10",
+      "id": "4d0c"
+    },
+    {
+      "name": "Application Devop",
+      "company": "Accenture",
+      "phone": "8976543567",
+      "address": "Kolkata",
+      "email": "Acceture@gmail.com",
+      "lastDateContact": "2026-03-18",
+      "id": "efbc"
+    },
+    {
+      "name": "Application Developers",
+      "company": "Genpact",
+      "phone": "123456789",
+      "address": "Kolkata",
+      "email": "Genpact@gmail.com",
+      "lastDateContact": "2026-03-14",
+      "id": "68d5"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

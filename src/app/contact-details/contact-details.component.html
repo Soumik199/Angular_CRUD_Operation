@@ -1,0 +1,82 @@
+<mat-card>
+  <mat-card-title>
+    <h2 class="FormTitle">
+      <mat-icon>edit</mat-icon> Upate Contact - Details Form
+    </h2>
+  </mat-card-title>
+
+  <mat-card-content>
+    <div class="Form_Container">
+      <form class="Contact_Form" [formGroup]="contactForm">
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input
+            matInput
+            formControlName="name"
+            placeholder="e.g. Soumik Roy"
+          />
+          <mat-icon matSuffix>account_circle</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Company Name </mat-label>
+          <input
+            matInput
+            formControlName="company"
+            placeholder="e.g. Company Name"
+          />
+          <mat-icon matSuffix>account_balance</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Phone</mat-label>
+          <input matInput formControlName="phone" placeholder="e.g. Phone" />
+          <mat-icon matSuffix>contact_phone</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Address</mat-label>
+          <input
+            matInput
+            formControlName="address"
+            placeholder="e.g. Office Address"
+          />
+          <mat-icon matSuffix>location_on</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Email </mat-label>
+
+          <input matInput formControlName="email" placeholder="e.g. Email" />
+          <mat-icon matSuffix>contact_mail</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Last Date Contact</mat-label>
+          <input
+            matInput
+            [matDatepicker]="picker"
+            formControlName="lastDateContact"
+          />
+          <mat-datepicker-toggle
+            matIconSuffix
+            [for]="picker"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <div class="button_container_left">
+          <button mat-raised-button color="primary" (click)="UpdateContact()">
+            <mat-icon>update</mat-icon>
+            Update
+          </button>
+
+          <button mat-raised-button color="warn" (click)="DeleteContact()">
+            <mat-icon>delete</mat-icon>
+            Delete
+          </button>
+        </div>
+      </form>
+    </div>
+  </mat-card-content>
+</mat-card>

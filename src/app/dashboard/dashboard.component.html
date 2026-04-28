@@ -1,0 +1,50 @@
+<div class="Dasboard_Container">
+
+<div  class="ButtonContainer">
+<button mat-raised-button color="primary" routerLink="/create">Create New Contact </button>
+</div>
+
+
+<table mat-table [dataSource]="contacts" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name (Job Title) </th>
+        <td mat-cell *matCellDef="let element">  
+         <a [routerLink]="['/contact', element.id]">
+            {{element.name}}
+         </a>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="company">
+        <th mat-header-cell *matHeaderCellDef> Company </th>
+        <td mat-cell *matCellDef="let element"> {{element.company}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="phone">
+        <th mat-header-cell *matHeaderCellDef> Phone </th>
+        <td mat-cell *matCellDef="let element"> {{element.phone}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="address">
+        <th mat-header-cell *matHeaderCellDef> Address</th>
+        <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef> Email </th>
+        <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="lastDateContact">
+        <th mat-header-cell *matHeaderCellDef>Last Date Contact</th>
+        <td mat-cell *matCellDef="let element"> {{element.lastDateContact}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="DisplayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: DisplayedColumns;"></tr>
+</table>
+
+</div>
+
+ 
