@@ -9,7 +9,8 @@ To start a local development server, run:
 ```bash
 ng serve
 ```
-
+# Run the Json Server 
+json-server --watch db.json
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
 ## Code scaffolding
@@ -51,6 +52,14 @@ For end-to-end (e2e) testing, run:
 ```bash
 ng e2e
 ```
+
+
+#Picture of the Site 
+
+
+
+
+
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
